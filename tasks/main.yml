@@ -1,0 +1,8 @@
+---
+
+- name: service state, enabled
+  service:
+    name: "{{nsr_svc_name}}"
+    state: "{{nsr_svc_state}}"
+    enabled: "{{nsr_svc_enabled}}"
+

@@ -1,0 +1,6 @@
+---
+
+xinetd_svc_name: networker
+xinetd_svc_state: started
+xinetd_svc_enabled: true
+
