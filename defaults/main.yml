@@ -1,6 +1,9 @@
 ---
 
-xinetd_svc_name: networker
+xinetd_pkg_name: xinetd
+xinetd_pkg_state: present
+
+xinetd_svc_name: xinetd
 xinetd_svc_state: started
 xinetd_svc_enabled: true
 

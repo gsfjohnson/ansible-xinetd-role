@@ -1,8 +1,13 @@
 ---
 
+- name: install pkg
+  package:
+    name: "{{xinetd_pkg_name}}"
+    state: "{{xinetd_pkg_state}}"
+
 - name: service state, enabled
   service:
-    name: "{{nsr_svc_name}}"
-    state: "{{nsr_svc_state}}"
-    enabled: "{{nsr_svc_enabled}}"
-
+    name: "{{xinetd_svc_name}}"
+    state: "{{xinetd_svc_state}}"
+    enabled: "{{xinetd_svc_enabled}}"
+  when: xinetd_pkg_state != 'absent'
